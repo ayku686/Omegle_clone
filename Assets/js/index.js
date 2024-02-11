@@ -11,7 +11,7 @@ let init = async () => {
     //document.getElementById("user-2").srcObject = localStream;
 };
 init();
-let socket=io.connect()
+let socket=io.connect();
 socket.on("connect",()=>{
     if(socket.connected){
         socket.emit("userconnect",{
